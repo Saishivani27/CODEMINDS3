@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudBud - AI Study Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>📚 StudBud - AI Study Planner</h1>
+
+    <label>Hard Subjects:</label>
+    <input type="text" id="hardSubjects" placeholder="Enter hard subjects (comma-separated)">
+
+    <label>Intermediate Subjects:</label>
+    <input type="text" id="intermediateSubjects" placeholder="Enter intermediate subjects (comma-separated)">
+
+    <label>Easy Subjects:</label>
+    <input type="text" id="easySubjects" placeholder="Enter easy subjects (comma-separated)">
+
+    <label>Study Hours Per Day:</label>
+    <input type="number" id="studyHours" placeholder="Enter total hours per day">
+
+    <label>Deadline:</label>
+    <input type="date" id="deadline">
+
+    <!-- Button to Generate Study Plan -->
+    <button onclick="generateSchedule()">Generate Study Plan</button>
+
+    <table id="studyPlanTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Time Slot</th>
+                <th>Subject</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Study schedule will be generated here -->
+        </tbody>
+    </table>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
